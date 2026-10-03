@@ -1,170 +1,171 @@
----
-title : "Tạo Admin Group và Admin User"
-date :  "`r Sys.Date()`" 
+﻿---
+title : "Táº¡o Admin Group vÃ  Admin User"
+date :  "2026-10-03" 
 weight : 3
 chapter : false
 pre : " <b> 3. </b> "
 ---
 
 
-## Tạo Admin Group
+## Táº¡o Admin Group
 
-1. **Đăng nhập vào Bảng điều khiển** ở trang [AWS Web Service page](https://aws.amazon.com/)
+1. **ÄÄƒng nháº­p vÃ o Báº£ng Ä‘iá»u khiá»ƒn** á»Ÿ trang [AWS Web Service page](https://aws.amazon.com/)
 
-2. Nhấn vào tên tài khoản ở góc trên bên phải và chọn **My Security Credentials**
+2. Nháº¥n vÃ o tÃªn tÃ i khoáº£n á»Ÿ gÃ³c trÃªn bÃªn pháº£i vÃ  chá»n **My Security Credentials**
 
    ![AWS IAM](/images/01/0001.png?featherlight=false&width=90pc)
 
-   > **Lưu ý:** Trong trường hợp không thấy menu **My Security Credentials**, bạn có thể click vào biểu tượng tìm kiếm và điền **IAM**. Sau đó click vào dịch vụ IAM để truy cập vào giao diện quản lý dịch vụ IAM.
+   > **LÆ°u Ã½:** Trong trÆ°á»ng há»£p khÃ´ng tháº¥y menu **My Security Credentials**, báº¡n cÃ³ thá»ƒ click vÃ o biá»ƒu tÆ°á»£ng tÃ¬m kiáº¿m vÃ  Ä‘iá»n **IAM**. Sau Ä‘Ã³ click vÃ o dá»‹ch vá»¥ IAM Ä‘á»ƒ truy cáº­p vÃ o giao diá»‡n quáº£n lÃ½ dá»‹ch vá»¥ IAM.
 
    ![AWS IAM](/images/01/0002.png?featherlight=false&width=90pc)
 
-3. Ở thanh bên trái, chọn **User Groups** sau đó chọn **Create Group**
+3. á»ž thanh bÃªn trÃ¡i, chá»n **User Groups** sau Ä‘Ã³ chá»n **Create Group**
 
    ![AWS IAM](/images/01/0003.png?featherlight=false&width=90pc)
 
-4. Dưới mục **Name the group**, nhập tên Group (Ví dụ: *AdminGroup*) và cuộn chuột xuống dưới
+4. DÆ°á»›i má»¥c **Name the group**, nháº­p tÃªn Group (VÃ­ dá»¥: *AdminGroup*) vÃ  cuá»™n chuá»™t xuá»‘ng dÆ°á»›i
 
    ![AWS IAM](/images/01/0004.png?featherlight=false&width=90pc)
 
-5. Ở phần **Attach permissions policies**, gõ **AdministratorAccesss** vào thanh tìm kiếm và nhấn chọn nó. Cuối cùng, chọn **Create Group**.
+5. á»ž pháº§n **Attach permissions policies**, gÃµ **AdministratorAccesss** vÃ o thanh tÃ¬m kiáº¿m vÃ  nháº¥n chá»n nÃ³. Cuá»‘i cÃ¹ng, chá»n **Create Group**.
 
    ![AWS IAM](/images/01/0005.png?featherlight=false&width=90pc)
 
-6. Hoàn thành tạo admin group.
+6. HoÃ n thÃ nh táº¡o admin group.
 
    ![AWS IAM](/images/01/0006.png?featherlight=false&width=90pc)
 
-## Tạo Admin User
+## Táº¡o Admin User
 
-1. Ở thanh bên trái, chọn **Users** sau đó chọn **Add User**
+1. á»ž thanh bÃªn trÃ¡i, chá»n **Users** sau Ä‘Ã³ chá»n **Add User**
 
    ![AWS IAM](/images/02/0001.png?featherlight=false&width=90pc)
 
-2. Nhập tên User (Ví dụ: *AdminUser*).
+2. Nháº­p tÃªn User (VÃ­ dá»¥: *AdminUser*).
     + Click **AWS Management Console access**.
     + Click **Programmatic Access**.
-    + Click **Custom password** rồi gõ một password tùy ý của bạn (lưu ý: bạn phải ghi nhớ mật khẩu này cho những lần đăng nhập trong tương lai).
-    + Bỏ chọn mục **User must create a new password...**.
+    + Click **Custom password** rá»“i gÃµ má»™t password tÃ¹y Ã½ cá»§a báº¡n (lÆ°u Ã½: báº¡n pháº£i ghi nhá»› máº­t kháº©u nÃ y cho nhá»¯ng láº§n Ä‘Äƒng nháº­p trong tÆ°Æ¡ng lai).
+    + Bá» chá»n má»¥c **User must create a new password...**.
     + Click **Next:Permissions**.
 
    ![AWS IAM](/images/02/0002.png?featherlight=false&width=90pc)
 
-   > **Lưu ý:** Bằng cách chọn **AWS Management Console access**, bạn vừa cho phép IAM User được truy cập vào AWS thông qua bảng điều khiển AWS trên web. Việc bỏ mục **User must create a new password...** cho phép người dùng khi lần đầu đăng nhập vào IAM User đó không cần phải tạo mật khẩu mới.
+   > **LÆ°u Ã½:** Báº±ng cÃ¡ch chá»n **AWS Management Console access**, báº¡n vá»«a cho phÃ©p IAM User Ä‘Æ°á»£c truy cáº­p vÃ o AWS thÃ´ng qua báº£ng Ä‘iá»u khiá»ƒn AWS trÃªn web. Viá»‡c bá» má»¥c **User must create a new password...** cho phÃ©p ngÆ°á»i dÃ¹ng khi láº§n Ä‘áº§u Ä‘Äƒng nháº­p vÃ o IAM User Ä‘Ã³ khÃ´ng cáº§n pháº£i táº¡o máº­t kháº©u má»›i.
 
-3. Click tab **Add user to group** và click **AdminGroup** mà chúng ta tạo trước đó.
+3. Click tab **Add user to group** vÃ  click **AdminGroup** mÃ  chÃºng ta táº¡o trÆ°á»›c Ä‘Ã³.
 
    ![AWS IAM](/images/02/0003.png?featherlight=false&width=90pc)
 
 4. Click **Next:Tags**
-    - Tags (thẻ) là một tùy chọn không bắt buộc để tổ chức, theo dõi, hoặc điều khiển truy cập của user, thế nên bạn có thể thêm tags hoặc không.
+    - Tags (tháº») lÃ  má»™t tÃ¹y chá»n khÃ´ng báº¯t buá»™c Ä‘á»ƒ tá»• chá»©c, theo dÃµi, hoáº·c Ä‘iá»u khiá»ƒn truy cáº­p cá»§a user, tháº¿ nÃªn báº¡n cÃ³ thá»ƒ thÃªm tags hoáº·c khÃ´ng.
 
 5. Click **Next:Review**.
 
    ![AWS IAM](/images/02/0004.png?featherlight=false&width=90pc)
 
-6. Kiểm tra thông tin và chọn **Create user**
+6. Kiá»ƒm tra thÃ´ng tin vÃ  chá»n **Create user**
 
    ![AWS IAM](/images/02/0005.png?featherlight=false&width=90pc)
 
-7. Hoàn thành tạo user. Có thể download.csv để lưu trữ Access key.
+7. HoÃ n thÃ nh táº¡o user. CÃ³ thá»ƒ download.csv Ä‘á»ƒ lÆ°u trá»¯ Access key.
 
    ![AWS IAM](/images/02/0006.png?featherlight=false&width=90pc)
 
-8. Tạo admin user thành công.
+8. Táº¡o admin user thÃ nh cÃ´ng.
 
    ![AWS IAM](/images/02/0007.png?featherlight=false&width=90pc)
 
-9. Kiểm tra thông tin chi tiết user.
+9. Kiá»ƒm tra thÃ´ng tin chi tiáº¿t user.
 
    ![AWS IAM](/images/02/0008.png?featherlight=false&width=90pc)
 
-   > **Lưu ý:** Sau khi tạo user, bạn sẽ thấy hiện lên hộp thoại download thông tin access key và secret key. Đây là thông tin dùng để thực hiện **Programmatic access** tới các tài nguyên của AWS thông qua **AWS CLI** và **AWS SDK**. Tạm thời chúng ta sẽ chưa sử dụng tới.
+   > **LÆ°u Ã½:** Sau khi táº¡o user, báº¡n sáº½ tháº¥y hiá»‡n lÃªn há»™p thoáº¡i download thÃ´ng tin access key vÃ  secret key. ÄÃ¢y lÃ  thÃ´ng tin dÃ¹ng Ä‘á»ƒ thá»±c hiá»‡n **Programmatic access** tá»›i cÃ¡c tÃ i nguyÃªn cá»§a AWS thÃ´ng qua **AWS CLI** vÃ  **AWS SDK**. Táº¡m thá»i chÃºng ta sáº½ chÆ°a sá»­ dá»¥ng tá»›i.
 
-# Đăng nhập vào AdminUser
+# ÄÄƒng nháº­p vÃ o AdminUser
 
-1. Trở về dịch vụ IAM, và chọn **Users** ở thanh bên trái.
-2. Nhấn vào tên của IAM User mà bạn vừa chọn.
-3. Trong mục **Summary**, chọn tab **Security credentials**. Nhìn vào dòng **Summary: Console sign-in link** và copy đường link bên cạnh nó. Đây là đường link bạn dùng để đăng nhập vào IAM User.
+1. Trá»Ÿ vá» dá»‹ch vá»¥ IAM, vÃ  chá»n **Users** á»Ÿ thanh bÃªn trÃ¡i.
+2. Nháº¥n vÃ o tÃªn cá»§a IAM User mÃ  báº¡n vá»«a chá»n.
+3. Trong má»¥c **Summary**, chá»n tab **Security credentials**. NhÃ¬n vÃ o dÃ²ng **Summary: Console sign-in link** vÃ  copy Ä‘Æ°á»ng link bÃªn cáº¡nh nÃ³. ÄÃ¢y lÃ  Ä‘Æ°á»ng link báº¡n dÃ¹ng Ä‘á»ƒ Ä‘Äƒng nháº­p vÃ o IAM User.
 
    ![AWS IAM](/images/03/0001.png?featherlight=false&width=90pc)
 
-4. Mở một tab ẩn danh của trình duyệt bạn đang sử dụng và paste đường link ấy vào thanh tìm kiếm.
+4. Má»Ÿ má»™t tab áº©n danh cá»§a trÃ¬nh duyá»‡t báº¡n Ä‘ang sá»­ dá»¥ng vÃ  paste Ä‘Æ°á»ng link áº¥y vÃ o thanh tÃ¬m kiáº¿m.
 
    ![AWS IAM](/images/03/0002.png?featherlight=false&width=90pc)
 
-   > **Lưu ý:** Việc đăng nhập bằng tab ẩn danh cho phép bạn đăng nhập vào AWS bằng IAM User mà không cần phải log out khỏi root user trong tab chính.
+   > **LÆ°u Ã½:** Viá»‡c Ä‘Äƒng nháº­p báº±ng tab áº©n danh cho phÃ©p báº¡n Ä‘Äƒng nháº­p vÃ o AWS báº±ng IAM User mÃ  khÃ´ng cáº§n pháº£i log out khá»i root user trong tab chÃ­nh.
 
-5. Nhập đúng tên IAM User và password mà bạn đã nhập ở phần **tạo IAM User** ở trên. Nhấn **sign in**.
+5. Nháº­p Ä‘Ãºng tÃªn IAM User vÃ  password mÃ  báº¡n Ä‘Ã£ nháº­p á»Ÿ pháº§n **táº¡o IAM User** á»Ÿ trÃªn. Nháº¥n **sign in**.
 
    ![AWS IAM](/images/03/0003.png?featherlight=false&width=90pc)
 
-6. Chúc mừng, bạn đã truy cập thành công vào tài khoản của bạn dưới danh nghĩa của một IAM User **AdminUser**.
+6. ChÃºc má»«ng, báº¡n Ä‘Ã£ truy cáº­p thÃ nh cÃ´ng vÃ o tÃ i khoáº£n cá»§a báº¡n dÆ°á»›i danh nghÄ©a cá»§a má»™t IAM User **AdminUser**.
 
    ![AWS IAM](/images/03/0004.png?featherlight=false&width=90pc)
 
-7. Bước tiếp theo, chúng ta sẽ chuyển sang sử dụng IAM Role để nâng cao tính bảo mật hơn cho account của bạn nhé.
+7. BÆ°á»›c tiáº¿p theo, chÃºng ta sáº½ chuyá»ƒn sang sá»­ dá»¥ng IAM Role Ä‘á»ƒ nÃ¢ng cao tÃ­nh báº£o máº­t hÆ¡n cho account cá»§a báº¡n nhÃ©.
 
 
-#### Tham khảo
+#### Tham kháº£o
 
-# IAM User và Đăng Nhập Trong AWS
+# IAM User vÃ  ÄÄƒng Nháº­p Trong AWS
 
-Một IAM user là một định danh được tạo trong một tài khoản AWS, có quyền được tương tác với các tài nguyên AWS. Người dùng IAM đăng nhập bằng cách sử dụng ID tài khoản hoặc tên bí danh, tên người dùng của họ và mật khẩu. Tên người dùng IAM được cấu hình bởi quản trị viên của bạn. Tên người dùng IAM có thể là tên thân thiện như "Zhang", hoặc là địa chỉ email như "zhang@example.com". Tên người dùng IAM không thể chứa khoảng trắng, nhưng có thể chứa chữ cái in hoa và thường, số, và các ký tự + = , . @ _ -.
+Má»™t IAM user lÃ  má»™t Ä‘á»‹nh danh Ä‘Æ°á»£c táº¡o trong má»™t tÃ i khoáº£n AWS, cÃ³ quyá»n Ä‘Æ°á»£c tÆ°Æ¡ng tÃ¡c vá»›i cÃ¡c tÃ i nguyÃªn AWS. NgÆ°á»i dÃ¹ng IAM Ä‘Äƒng nháº­p báº±ng cÃ¡ch sá»­ dá»¥ng ID tÃ i khoáº£n hoáº·c tÃªn bÃ­ danh, tÃªn ngÆ°á»i dÃ¹ng cá»§a há» vÃ  máº­t kháº©u. TÃªn ngÆ°á»i dÃ¹ng IAM Ä‘Æ°á»£c cáº¥u hÃ¬nh bá»Ÿi quáº£n trá»‹ viÃªn cá»§a báº¡n. TÃªn ngÆ°á»i dÃ¹ng IAM cÃ³ thá»ƒ lÃ  tÃªn thÃ¢n thiá»‡n nhÆ° "Zhang", hoáº·c lÃ  Ä‘á»‹a chá»‰ email nhÆ° "zhang@example.com". TÃªn ngÆ°á»i dÃ¹ng IAM khÃ´ng thá»ƒ chá»©a khoáº£ng tráº¯ng, nhÆ°ng cÃ³ thá»ƒ chá»©a chá»¯ cÃ¡i in hoa vÃ  thÆ°á»ng, sá»‘, vÃ  cÃ¡c kÃ½ tá»± + = , . @ _ -.
 
-**Mẹo**
-Nếu người dùng IAM của bạn đã bật xác thực đa yếu tố (MFA), bạn phải có quyền truy cập vào thiết bị xác thực. Để biết thêm chi tiết, xem [Sử dụng thiết bị MFA với trang đăng nhập IAM của bạn](link_to_MFA_documentation).
+**Máº¹o**
+Náº¿u ngÆ°á»i dÃ¹ng IAM cá»§a báº¡n Ä‘Ã£ báº­t xÃ¡c thá»±c Ä‘a yáº¿u tá»‘ (MFA), báº¡n pháº£i cÃ³ quyá»n truy cáº­p vÃ o thiáº¿t bá»‹ xÃ¡c thá»±c. Äá»ƒ biáº¿t thÃªm chi tiáº¿t, xem [Sá»­ dá»¥ng thiáº¿t bá»‹ MFA vá»›i trang Ä‘Äƒng nháº­p IAM cá»§a báº¡n](link_to_MFA_documentation).
 
-**Để đăng nhập với tư cách người dùng IAM**
-1. Mở Bảng điều khiển Quản lý AWS tại https://console.aws.amazon.com/.
+**Äá»ƒ Ä‘Äƒng nháº­p vá»›i tÆ° cÃ¡ch ngÆ°á»i dÃ¹ng IAM**
+1. Má»Ÿ Báº£ng Ä‘iá»u khiá»ƒn Quáº£n lÃ½ AWS táº¡i https://console.aws.amazon.com/.
 
-2. Trang đăng nhập chính hiển thị. Chọn "IAM user", nhập ID tài khoản (12 chữ số) hoặc bí danh và chọn "Next".
+2. Trang Ä‘Äƒng nháº­p chÃ­nh hiá»ƒn thá»‹. Chá»n "IAM user", nháº­p ID tÃ i khoáº£n (12 chá»¯ sá»‘) hoáº·c bÃ­ danh vÃ  chá»n "Next".
 
-**Ghi chú**
-Bạn có thể không cần phải nhập ID tài khoản hoặc bí danh nếu bạn đã đăng nhập trước đó với tài khoản IAM bằng trình duyệt hiện tại hoặc nếu bạn đang sử dụng URL đăng nhập tài khoản của bạn.
+**Ghi chÃº**
+Báº¡n cÃ³ thá»ƒ khÃ´ng cáº§n pháº£i nháº­p ID tÃ i khoáº£n hoáº·c bÃ­ danh náº¿u báº¡n Ä‘Ã£ Ä‘Äƒng nháº­p trÆ°á»›c Ä‘Ã³ vá»›i tÃ i khoáº£n IAM báº±ng trÃ¬nh duyá»‡t hiá»‡n táº¡i hoáº·c náº¿u báº¡n Ä‘ang sá»­ dá»¥ng URL Ä‘Äƒng nháº­p tÃ i khoáº£n cá»§a báº¡n.
 
-3. Nhập tên người dùng IAM và mật khẩu của bạn, sau đó chọn "Sign in".
+3. Nháº­p tÃªn ngÆ°á»i dÃ¹ng IAM vÃ  máº­t kháº©u cá»§a báº¡n, sau Ä‘Ã³ chá»n "Sign in".
 
-4. Nếu MFA được bật cho người dùng IAM của bạn, sau đó bạn sẽ được xác thực sử dụng nó.
+4. Náº¿u MFA Ä‘Æ°á»£c báº­t cho ngÆ°á»i dÃ¹ng IAM cá»§a báº¡n, sau Ä‘Ã³ báº¡n sáº½ Ä‘Æ°á»£c xÃ¡c thá»±c sá»­ dá»¥ng nÃ³.
 
-Sau khi xác thực, Bảng điều khiển Quản lý AWS sẽ mở trang chủ Bảng điều khiển. 
+Sau khi xÃ¡c thá»±c, Báº£ng Ä‘iá»u khiá»ƒn Quáº£n lÃ½ AWS sáº½ má»Ÿ trang chá»§ Báº£ng Ä‘iá»u khiá»ƒn. 
 
 
-### Tạo khóa truy cập (access key) cho tài khoản root user trên AWS
+### Táº¡o khÃ³a truy cáº­p (access key) cho tÃ i khoáº£n root user trÃªn AWS
 
-#### Quyền tối thiểu cần thiết
+#### Quyá»n tá»‘i thiá»ƒu cáº§n thiáº¿t
 
-Để thực hiện các bước sau, bạn cần có ít nhất các quyền IAM (Identity and Access Management) sau đây:
+Äá»ƒ thá»±c hiá»‡n cÃ¡c bÆ°á»›c sau, báº¡n cáº§n cÃ³ Ã­t nháº¥t cÃ¡c quyá»n IAM (Identity and Access Management) sau Ä‘Ã¢y:
 
-- Bạn phải đăng nhập với tư cách là tài khoản root user của AWS, điều này không yêu cầu bất kỳ quyền IAM bổ sung nào khác. Bạn không thể thực hiện các bước này với tư cách là người dùng IAM hoặc vai trò (role).
+- Báº¡n pháº£i Ä‘Äƒng nháº­p vá»›i tÆ° cÃ¡ch lÃ  tÃ i khoáº£n root user cá»§a AWS, Ä‘iá»u nÃ y khÃ´ng yÃªu cáº§u báº¥t ká»³ quyá»n IAM bá»• sung nÃ o khÃ¡c. Báº¡n khÃ´ng thá»ƒ thá»±c hiá»‡n cÃ¡c bÆ°á»›c nÃ y vá»›i tÆ° cÃ¡ch lÃ  ngÆ°á»i dÃ¹ng IAM hoáº·c vai trÃ² (role).
 
-- Sử dụng địa chỉ email và mật khẩu của tài khoản AWS để đăng nhập vào Bảng điều khiển quản lý AWS (AWS Management Console) với tư cách là tài khoản root user.
+- Sá»­ dá»¥ng Ä‘á»‹a chá»‰ email vÃ  máº­t kháº©u cá»§a tÃ i khoáº£n AWS Ä‘á»ƒ Ä‘Äƒng nháº­p vÃ o Báº£ng Ä‘iá»u khiá»ƒn quáº£n lÃ½ AWS (AWS Management Console) vá»›i tÆ° cÃ¡ch lÃ  tÃ i khoáº£n root user.
 
-- Ở góc trên bên phải của bảng điều khiển, chọn tên hoặc số tài khoản của bạn, sau đó chọn Security Credentials (Thông tin xác thực bảo mật).
+- á»ž gÃ³c trÃªn bÃªn pháº£i cá»§a báº£ng Ä‘iá»u khiá»ƒn, chá»n tÃªn hoáº·c sá»‘ tÃ i khoáº£n cá»§a báº¡n, sau Ä‘Ã³ chá»n Security Credentials (ThÃ´ng tin xÃ¡c thá»±c báº£o máº­t).
 
-- Ở phần Access keys (Khóa truy cập), chọn Create access key (Tạo khóa truy cập). Nếu tùy chọn này không khả dụng, điều đó có nghĩa bạn đã có số lượng tối đa các khóa truy cập. Bạn phải xóa một trong các khóa truy cập hiện có trước khi tạo khóa mới. Để biết thêm thông tin, xem IAM Object Quotas trong Hướng dẫn Người dùng IAM.
+- á»ž pháº§n Access keys (KhÃ³a truy cáº­p), chá»n Create access key (Táº¡o khÃ³a truy cáº­p). Náº¿u tÃ¹y chá»n nÃ y khÃ´ng kháº£ dá»¥ng, Ä‘iá»u Ä‘Ã³ cÃ³ nghÄ©a báº¡n Ä‘Ã£ cÃ³ sá»‘ lÆ°á»£ng tá»‘i Ä‘a cÃ¡c khÃ³a truy cáº­p. Báº¡n pháº£i xÃ³a má»™t trong cÃ¡c khÃ³a truy cáº­p hiá»‡n cÃ³ trÆ°á»›c khi táº¡o khÃ³a má»›i. Äá»ƒ biáº¿t thÃªm thÃ´ng tin, xem IAM Object Quotas trong HÆ°á»›ng dáº«n NgÆ°á»i dÃ¹ng IAM.
 
-- Trên trang Alternatives to root user access keys (Các phương án thay thế cho khóa truy cập tài khoản root user), xem xét các khuyến nghị về bảo mật. Để tiếp tục, chọn vào ô kiểm và sau đó chọn Create access key (Tạo khóa truy cập).
+- TrÃªn trang Alternatives to root user access keys (CÃ¡c phÆ°Æ¡ng Ã¡n thay tháº¿ cho khÃ³a truy cáº­p tÃ i khoáº£n root user), xem xÃ©t cÃ¡c khuyáº¿n nghá»‹ vá» báº£o máº­t. Äá»ƒ tiáº¿p tá»¥c, chá»n vÃ o Ã´ kiá»ƒm vÃ  sau Ä‘Ã³ chá»n Create access key (Táº¡o khÃ³a truy cáº­p).
 
-- Trên trang Retrieve access key (Trang Lấy lại khóa truy cập), Access key ID của bạn sẽ được hiển thị.
+- TrÃªn trang Retrieve access key (Trang Láº¥y láº¡i khÃ³a truy cáº­p), Access key ID cá»§a báº¡n sáº½ Ä‘Æ°á»£c hiá»ƒn thá»‹.
 
-- Dưới mục Secret access key (Khóa truy cập bí mật), chọn Show (Hiển thị) và sau đó sao chép Access key ID và Secret key từ cửa sổ trình duyệt của bạn, sau đó dán chúng vào một nơi an toàn. Tùy chọn khác, bạn có thể chọn Download .csv file (Tải xuống tệp .csv) để tải xuống một tệp có tên là rootkey.csv chứa Access key ID và Secret key. Lưu tệp ở một nơi an toàn.
+- DÆ°á»›i má»¥c Secret access key (KhÃ³a truy cáº­p bÃ­ máº­t), chá»n Show (Hiá»ƒn thá»‹) vÃ  sau Ä‘Ã³ sao chÃ©p Access key ID vÃ  Secret key tá»« cá»­a sá»• trÃ¬nh duyá»‡t cá»§a báº¡n, sau Ä‘Ã³ dÃ¡n chÃºng vÃ o má»™t nÆ¡i an toÃ n. TÃ¹y chá»n khÃ¡c, báº¡n cÃ³ thá»ƒ chá»n Download .csv file (Táº£i xuá»‘ng tá»‡p .csv) Ä‘á»ƒ táº£i xuá»‘ng má»™t tá»‡p cÃ³ tÃªn lÃ  rootkey.csv chá»©a Access key ID vÃ  Secret key. LÆ°u tá»‡p á»Ÿ má»™t nÆ¡i an toÃ n.
 
-- Chọn Done (Hoàn thành). Khi bạn không còn cần khóa truy cập nữa, chúng tôi khuyến nghị bạn xóa nó hoặc ít nhất là xem xét vô hiệu hóa nó để không ai có thể lạm dụng.
+- Chá»n Done (HoÃ n thÃ nh). Khi báº¡n khÃ´ng cÃ²n cáº§n khÃ³a truy cáº­p ná»¯a, chÃºng tÃ´i khuyáº¿n nghá»‹ báº¡n xÃ³a nÃ³ hoáº·c Ã­t nháº¥t lÃ  xem xÃ©t vÃ´ hiá»‡u hÃ³a nÃ³ Ä‘á»ƒ khÃ´ng ai cÃ³ thá»ƒ láº¡m dá»¥ng.
 
-> Lưu ý: Các bước này chỉ áp dụng cho tài khoản root user trên AWS. Đối với các người dùng IAM hoặc vai trò (role), cách tạo và quản lý khóa truy cập có thể khác nhau.
+> LÆ°u Ã½: CÃ¡c bÆ°á»›c nÃ y chá»‰ Ã¡p dá»¥ng cho tÃ i khoáº£n root user trÃªn AWS. Äá»‘i vá»›i cÃ¡c ngÆ°á»i dÃ¹ng IAM hoáº·c vai trÃ² (role), cÃ¡ch táº¡o vÃ  quáº£n lÃ½ khÃ³a truy cáº­p cÃ³ thá»ƒ khÃ¡c nhau.
 
-### Xóa một khóa truy cập cho người dùng gốc trên AWS
+### XÃ³a má»™t khÃ³a truy cáº­p cho ngÆ°á»i dÃ¹ng gá»‘c trÃªn AWS
 
-#### Quyền tối thiểu
-Để thực hiện các bước sau, bạn phải có ít nhất các quyền IAM (Quản lý Quyền và Danh sách quyền) sau đây:
+#### Quyá»n tá»‘i thiá»ƒu
+Äá»ƒ thá»±c hiá»‡n cÃ¡c bÆ°á»›c sau, báº¡n pháº£i cÃ³ Ã­t nháº¥t cÃ¡c quyá»n IAM (Quáº£n lÃ½ Quyá»n vÃ  Danh sÃ¡ch quyá»n) sau Ä‘Ã¢y:
 
-- Bạn phải đăng nhập dưới tư cách người dùng gốc của tài khoản AWS, điều này không yêu cầu bất kỳ quyền AWS Identity and Access Management (IAM) bổ sung nào. Bạn không thể thực hiện các bước này dưới tư cách người dùng IAM hoặc vai trò.
-- Sử dụng địa chỉ email và mật khẩu của tài khoản AWS để đăng nhập vào Bảng điều khiển Quản lý AWS dưới tư cách người dùng gốc của bạn.
-- Ở góc trên bên phải của bảng điều khiển, chọn tên hoặc số tài khoản của bạn, sau đó chọn **Security Credentials** (Chứng chỉ Bảo mật).
-- Trong phần **Access keys** (Khóa truy cập), chọn khóa truy cập mà bạn muốn xóa, sau đó, ở mục **Actions** (Thao tác), chọn **Delete** (Xóa).
+- Báº¡n pháº£i Ä‘Äƒng nháº­p dÆ°á»›i tÆ° cÃ¡ch ngÆ°á»i dÃ¹ng gá»‘c cá»§a tÃ i khoáº£n AWS, Ä‘iá»u nÃ y khÃ´ng yÃªu cáº§u báº¥t ká»³ quyá»n AWS Identity and Access Management (IAM) bá»• sung nÃ o. Báº¡n khÃ´ng thá»ƒ thá»±c hiá»‡n cÃ¡c bÆ°á»›c nÃ y dÆ°á»›i tÆ° cÃ¡ch ngÆ°á»i dÃ¹ng IAM hoáº·c vai trÃ².
+- Sá»­ dá»¥ng Ä‘á»‹a chá»‰ email vÃ  máº­t kháº©u cá»§a tÃ i khoáº£n AWS Ä‘á»ƒ Ä‘Äƒng nháº­p vÃ o Báº£ng Ä‘iá»u khiá»ƒn Quáº£n lÃ½ AWS dÆ°á»›i tÆ° cÃ¡ch ngÆ°á»i dÃ¹ng gá»‘c cá»§a báº¡n.
+- á»ž gÃ³c trÃªn bÃªn pháº£i cá»§a báº£ng Ä‘iá»u khiá»ƒn, chá»n tÃªn hoáº·c sá»‘ tÃ i khoáº£n cá»§a báº¡n, sau Ä‘Ã³ chá»n **Security Credentials** (Chá»©ng chá»‰ Báº£o máº­t).
+- Trong pháº§n **Access keys** (KhÃ³a truy cáº­p), chá»n khÃ³a truy cáº­p mÃ  báº¡n muá»‘n xÃ³a, sau Ä‘Ã³, á»Ÿ má»¥c **Actions** (Thao tÃ¡c), chá»n **Delete** (XÃ³a).
 
-> **Lưu ý**
-> Theo cách khác, bạn có thể **Deactivate** (Ngưng hoạt động) một khóa truy cập thay vì xóa nó vĩnh viễn. Điều này giúp bạn có thể tiếp tục sử dụng nó trong tương lai mà không cần thay đổi cả ID khóa lẫn khóa bí mật. Trong khi khóa bị vô hiệu hóa, mọi yêu cầu sử dụng nó trong các yêu cầu tới AWS API sẽ thất bại với lỗi "access denied" (truy cập bị từ chối).
+> **LÆ°u Ã½**
+> Theo cÃ¡ch khÃ¡c, báº¡n cÃ³ thá»ƒ **Deactivate** (NgÆ°ng hoáº¡t Ä‘á»™ng) má»™t khÃ³a truy cáº­p thay vÃ¬ xÃ³a nÃ³ vÄ©nh viá»…n. Äiá»u nÃ y giÃºp báº¡n cÃ³ thá»ƒ tiáº¿p tá»¥c sá»­ dá»¥ng nÃ³ trong tÆ°Æ¡ng lai mÃ  khÃ´ng cáº§n thay Ä‘á»•i cáº£ ID khÃ³a láº«n khÃ³a bÃ­ máº­t. Trong khi khÃ³a bá»‹ vÃ´ hiá»‡u hÃ³a, má»i yÃªu cáº§u sá»­ dá»¥ng nÃ³ trong cÃ¡c yÃªu cáº§u tá»›i AWS API sáº½ tháº¥t báº¡i vá»›i lá»—i "access denied" (truy cáº­p bá»‹ tá»« chá»‘i).
 >
-> Trên hộp thoại **Delete <access key ID>** (Xóa <ID khóa truy cập>), chọn **Deactivate** (Ngưng hoạt động), nhập ID khóa truy cập để xác nhận bạn muốn xóa nó, sau đó chọn **Delete** (Xóa).
+> TrÃªn há»™p thoáº¡i **Delete <access key ID>** (XÃ³a <ID khÃ³a truy cáº­p>), chá»n **Deactivate** (NgÆ°ng hoáº¡t Ä‘á»™ng), nháº­p ID khÃ³a truy cáº­p Ä‘á»ƒ xÃ¡c nháº­n báº¡n muá»‘n xÃ³a nÃ³, sau Ä‘Ã³ chá»n **Delete** (XÃ³a).
+

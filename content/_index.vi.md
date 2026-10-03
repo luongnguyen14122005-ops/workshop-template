@@ -1,42 +1,42 @@
----
-title : "Thiết lập Tài Khoản AWS"
-date :  "`r Sys.Date()`" 
+﻿---
+title : "Thiáº¿t láº­p TÃ i Khoáº£n AWS"
+date :  "2026-10-03" 
 weight : 1 
 chapter : false
 ---
 
-# Tạo tài khoản AWS đầu tiên
+# Táº¡o tÃ i khoáº£n AWS Ä‘áº§u tiÃªn
 
-#### Tổng quan
-Trong bài lab đầu tiên này, bạn sẽ tạo mới **tài khoản AWS** đầu tiên của mình, tạo **MFA** (Multi-factor Authentication) để gia tăng bảo mật tài khoản của bạn. Bước tiếp theo bạn sẽ tạo **Admin Group**, **Admin User** để quản lý quyền truy cập vào các tài nguyên trong tài khoản của mình thay vì sử dụng user root.\
-Cuối cùng, nếu quá trình xác thực tài khoản của bạn có vấn đề, bạn sẽ được hướng dẫn hỗ trợ xác thực tài khoản với **AWS Support**.
+#### Tá»•ng quan
+Trong bÃ i lab Ä‘áº§u tiÃªn nÃ y, báº¡n sáº½ táº¡o má»›i **tÃ i khoáº£n AWS** Ä‘áº§u tiÃªn cá»§a mÃ¬nh, táº¡o **MFA** (Multi-factor Authentication) Ä‘á»ƒ gia tÄƒng báº£o máº­t tÃ i khoáº£n cá»§a báº¡n. BÆ°á»›c tiáº¿p theo báº¡n sáº½ táº¡o **Admin Group**, **Admin User** Ä‘á»ƒ quáº£n lÃ½ quyá»n truy cáº­p vÃ o cÃ¡c tÃ i nguyÃªn trong tÃ i khoáº£n cá»§a mÃ¬nh thay vÃ¬ sá»­ dá»¥ng user root.\
+Cuá»‘i cÃ¹ng, náº¿u quÃ¡ trÃ¬nh xÃ¡c thá»±c tÃ i khoáº£n cá»§a báº¡n cÃ³ váº¥n Ä‘á», báº¡n sáº½ Ä‘Æ°á»£c hÆ°á»›ng dáº«n há»— trá»£ xÃ¡c thá»±c tÃ i khoáº£n vá»›i **AWS Support**.
 
-#### Tài khoản AWS (AWS Account)
-**Tài khoản AWS** là phương tiện để bạn có thể truy cập và sử dụng những tài nguyên và dịch vụ của AWS. Theo mặc định, mỗi tài khoản AWS sẽ có một *root user*. *Root user* có toàn quyền với tài khoản AWS của bạn, và quyền hạn của root user không thể bị giới hạn. Nếu bạn mới sử dụng tài khoản AWS lần đầu tiên, bạn sẽ truy cập vào tài khoản dưới danh nghĩa của *root user*.
+#### TÃ i khoáº£n AWS (AWS Account)
+**TÃ i khoáº£n AWS** lÃ  phÆ°Æ¡ng tiá»‡n Ä‘á»ƒ báº¡n cÃ³ thá»ƒ truy cáº­p vÃ  sá»­ dá»¥ng nhá»¯ng tÃ i nguyÃªn vÃ  dá»‹ch vá»¥ cá»§a AWS. Theo máº·c Ä‘á»‹nh, má»—i tÃ i khoáº£n AWS sáº½ cÃ³ má»™t *root user*. *Root user* cÃ³ toÃ n quyá»n vá»›i tÃ i khoáº£n AWS cá»§a báº¡n, vÃ  quyá»n háº¡n cá»§a root user khÃ´ng thá»ƒ bá»‹ giá»›i háº¡n. Náº¿u báº¡n má»›i sá»­ dá»¥ng tÃ i khoáº£n AWS láº§n Ä‘áº§u tiÃªn, báº¡n sáº½ truy cáº­p vÃ o tÃ i khoáº£n dÆ°á»›i danh nghÄ©a cá»§a *root user*.
 
 ![Create Account](/images/1/0001.png?featherlight=false&width=90pc)
 
 {{% notice note %}}
-Chính vì quyền hạn của **root user** không thể bị giới hạn, AWS khuyên bạn không nên sử dụng trực tiếp *root user* cho bất kỳ công tác nào. Thay vào đó, bạn nên tạo ra một *IAM User* và trao quyền quản trị cho *IAM User* đó để dễ dàng quản lý và giảm thiểu rủi ro.
+ChÃ­nh vÃ¬ quyá»n háº¡n cá»§a **root user** khÃ´ng thá»ƒ bá»‹ giá»›i háº¡n, AWS khuyÃªn báº¡n khÃ´ng nÃªn sá»­ dá»¥ng trá»±c tiáº¿p *root user* cho báº¥t ká»³ cÃ´ng tÃ¡c nÃ o. Thay vÃ o Ä‘Ã³, báº¡n nÃªn táº¡o ra má»™t *IAM User* vÃ  trao quyá»n quáº£n trá»‹ cho *IAM User* Ä‘Ã³ Ä‘á»ƒ dá»… dÃ ng quáº£n lÃ½ vÃ  giáº£m thiá»ƒu rá»§i ro.
 {{% /notice %}}
 
 #### MFA (Multi-factor Authentication)
-**MFA** là một tính năng được sử dụng để gia tăng bảo mật của tài khoản AWS. Nếu MFA được kích hoạt, bạn sẽ phải nhập mã OTP (One-time Password) mỗi lần bạn đăng nhập vào tài khoản AWS.
+**MFA** lÃ  má»™t tÃ­nh nÄƒng Ä‘Æ°á»£c sá»­ dá»¥ng Ä‘á»ƒ gia tÄƒng báº£o máº­t cá»§a tÃ i khoáº£n AWS. Náº¿u MFA Ä‘Æ°á»£c kÃ­ch hoáº¡t, báº¡n sáº½ pháº£i nháº­p mÃ£ OTP (One-time Password) má»—i láº§n báº¡n Ä‘Äƒng nháº­p vÃ o tÃ i khoáº£n AWS.
 
 #### IAM Group 
-**IAM Group**  là một công cụ quản lý người dùng (*IAM User*) của AWS. Một IAM Group có thể chứa nhiều IAM User. Các IAM User ở trong một IAM Group đều hưởng chung quyền hạn mà IAM Group đó được gán cho.
+**IAM Group**  lÃ  má»™t cÃ´ng cá»¥ quáº£n lÃ½ ngÆ°á»i dÃ¹ng (*IAM User*) cá»§a AWS. Má»™t IAM Group cÃ³ thá»ƒ chá»©a nhiá»u IAM User. CÃ¡c IAM User á»Ÿ trong má»™t IAM Group Ä‘á»u hÆ°á»Ÿng chung quyá»n háº¡n mÃ  IAM Group Ä‘Ã³ Ä‘Æ°á»£c gÃ¡n cho.
 
 #### IAM User
-**IAM User** là một đơn vị người dùng của AWS. Khi bạn đăng nhập vào AWS, bạn sẽ phải đăng nhập dưới danh nghĩa của một IAM User. Nếu bạn mới đăng nhập vào AWS lần đầu tiên, bạn sẽ đăng nhập dưới danh nghĩa của *root user* (tạm dịch là người dùng gốc). Ngoài *root user* ra, bạn có thể tạo ra nhiều IAM User khác để cho phép người khác truy cập **dài hạn** vào tài nguyên AWS trong tài khoản AWS của bạn.
+**IAM User** lÃ  má»™t Ä‘Æ¡n vá»‹ ngÆ°á»i dÃ¹ng cá»§a AWS. Khi báº¡n Ä‘Äƒng nháº­p vÃ o AWS, báº¡n sáº½ pháº£i Ä‘Äƒng nháº­p dÆ°á»›i danh nghÄ©a cá»§a má»™t IAM User. Náº¿u báº¡n má»›i Ä‘Äƒng nháº­p vÃ o AWS láº§n Ä‘áº§u tiÃªn, báº¡n sáº½ Ä‘Äƒng nháº­p dÆ°á»›i danh nghÄ©a cá»§a *root user* (táº¡m dá»‹ch lÃ  ngÆ°á»i dÃ¹ng gá»‘c). NgoÃ i *root user* ra, báº¡n cÃ³ thá»ƒ táº¡o ra nhiá»u IAM User khÃ¡c Ä‘á»ƒ cho phÃ©p ngÆ°á»i khÃ¡c truy cáº­p **dÃ i háº¡n** vÃ o tÃ i nguyÃªn AWS trong tÃ i khoáº£n AWS cá»§a báº¡n.
 
 
 #### AWS Support
-**AWS Support** là một đơn vị cung cấp các dịch vụ hỗ trợ khách hàng của AWS.
+**AWS Support** lÃ  má»™t Ä‘Æ¡n vá»‹ cung cáº¥p cÃ¡c dá»‹ch vá»¥ há»— trá»£ khÃ¡ch hÃ ng cá»§a AWS.
 
 
-#### Nội dung chính
+#### Ná»™i dung chÃ­nh
 
-1. [Tạo tài khoản AWS](1-create-new-aws-account/)
-2. [Thiết lập MFA cho tài khoản AWS (Root)](2-mfa-setup-for-aws-user-(root)/)
-3. [Tài khoản và Nhóm Admin](3-create-admin-user-and-group/)
-4. [Hỗ trợ Xác thực Tài khoản](4-verify-new-account/)
+1. [Táº¡o tÃ i khoáº£n AWS](1-create-new-aws-account/)
+2. [Thiáº¿t láº­p MFA cho tÃ i khoáº£n AWS (Root)](2-mfa-setup-for-aws-user-(root)/)
+3. [TÃ i khoáº£n vÃ  NhÃ³m Admin](3-create-admin-user-and-group/)
+4. [Há»— trá»£ XÃ¡c thá»±c TÃ i khoáº£n](4-verify-new-account/)

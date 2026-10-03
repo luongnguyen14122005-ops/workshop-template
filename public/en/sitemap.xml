@@ -2,132 +2,144 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/1-create-new-aws-account/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/1-create-new-aws-account/"
-                />
+    <loc>http://localhost:1313/1-create-new-aws-account/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-create-new-aws-account/"
+                href="http://localhost:1313/1-create-new-aws-account/"
                 />
-  </url><url>
-    <loc>/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="http://localhost:1313/vi/1-create-new-aws-account/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="http://localhost:1313/"
                 />
-  </url><url>
-    <loc>/1-create-new-aws-account/1.1-find-account-id/</loc>
-  </url><url>
-    <loc>/2-mfa-setup-for-aws-user-root/1-virtual-mfa-device/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-mfa-setup-for-aws-user-root/1-virtual-mfa-device/"
+                href="http://localhost:1313/vi/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/1-create-new-aws-account/1.1-find-account-id/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2-mfa-setup-for-aws-user-root/1-virtual-mfa-device/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-mfa-setup-for-aws-user-root/1-virtual-mfa-device/"
+                href="http://localhost:1313/2-mfa-setup-for-aws-user-root/1-virtual-mfa-device/"
                 />
-  </url><url>
-    <loc>/2-mfa-setup-for-aws-user-root/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-mfa-setup-for-aws-user-root/"
+                href="http://localhost:1313/vi/2-mfa-setup-for-aws-user-root/1-virtual-mfa-device/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/2-mfa-setup-for-aws-user-root/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-mfa-setup-for-aws-user-root/"
+                href="http://localhost:1313/2-mfa-setup-for-aws-user-root/"
                 />
-  </url><url>
-    <loc>/2-mfa-setup-for-aws-user-root/2-u2f-security-key/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-mfa-setup-for-aws-user-root/2-u2f-security-key/"
+                href="http://localhost:1313/vi/2-mfa-setup-for-aws-user-root/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/2-mfa-setup-for-aws-user-root/2-u2f-security-key/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-mfa-setup-for-aws-user-root/2-u2f-security-key/"
+                href="http://localhost:1313/2-mfa-setup-for-aws-user-root/2-u2f-security-key/"
                 />
-  </url><url>
-    <loc>/1-create-new-aws-account/1.2-update-account/</loc>
-  </url><url>
-    <loc>/3-create-admin-user-and-group/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-create-admin-user-and-group/"
+                href="http://localhost:1313/vi/2-mfa-setup-for-aws-user-root/2-u2f-security-key/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/1-create-new-aws-account/1.2-update-account/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/3-create-admin-user-and-group/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-create-admin-user-and-group/"
+                href="http://localhost:1313/3-create-admin-user-and-group/"
                 />
-  </url><url>
-    <loc>/1-create-new-aws-account/1.3-aws-account-alias/</loc>
-  </url><url>
-    <loc>/2-mfa-setup-for-aws-user-root/3-other-hardware-mfa-device/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-mfa-setup-for-aws-user-root/3-other-hardware-mfa-device/"
+                href="http://localhost:1313/vi/3-create-admin-user-and-group/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/1-create-new-aws-account/1.3-aws-account-alias/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2-mfa-setup-for-aws-user-root/3-other-hardware-mfa-device/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-mfa-setup-for-aws-user-root/3-other-hardware-mfa-device/"
+                href="http://localhost:1313/2-mfa-setup-for-aws-user-root/3-other-hardware-mfa-device/"
                 />
-  </url><url>
-    <loc>/4-verify-new-account/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-verify-new-account/"
+                href="http://localhost:1313/vi/2-mfa-setup-for-aws-user-root/3-other-hardware-mfa-device/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/4-verify-new-account/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-verify-new-account/"
+                href="http://localhost:1313/4-verify-new-account/"
                 />
-  </url><url>
-    <loc>/1-create-new-aws-account/1.4-close-account/</loc>
-  </url><url>
-    <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="http://localhost:1313/vi/4-verify-new-account/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/1-create-new-aws-account/1.4-close-account/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="http://localhost:1313/categories/"
                 />
-  </url><url>
-    <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="http://localhost:1313/vi/categories/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/tags/"
                 />
   </url>
 </urlset>

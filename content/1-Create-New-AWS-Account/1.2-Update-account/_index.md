@@ -1,6 +1,6 @@
----
+﻿---
 title : "Update the AWS account"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 2
 chapter : false
 pre : " <b> 1.2 </b> "
@@ -45,3 +45,4 @@ To proceed with the following steps, you need to have at least the following IAM
 5. Once you have completed all the desired changes, select "Done."
 
 That's it! You've successfully updated your AWS account information.
+

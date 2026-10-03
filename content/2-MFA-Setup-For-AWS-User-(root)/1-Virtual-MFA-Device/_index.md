@@ -1,6 +1,6 @@
----
+﻿---
 title : "Virtual MFA Device"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 1
 chapter : false
 pre : " <b> 2.1 </b> "
@@ -61,3 +61,4 @@ To enhance the security of your AWS account, you can set up Multi-Factor Authent
    ![Additional MFA Setup](/images/2/00010.png?featherlight=false&width=90pc)
 
 By setting up Multi-Factor Authentication, you add an extra layer of security to your AWS account, helping to protect your valuable resources and data.
+

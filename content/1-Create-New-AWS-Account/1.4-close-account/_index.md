@@ -1,6 +1,6 @@
----
+﻿---
 title : "Close a standalone AWS account"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 4
 chapter : false
 pre : " <b> 1.4 </b> "
@@ -74,7 +74,7 @@ If you reopen your AWS account during the post-closure period, you might be bill
 > **Example:**
 > You reopen your AWS account 30 days after closure. Your AWS account had only an active t2.micro Amazon EC2 instance at closure. For this example, imagine that the price for a t2.micro Amazon EC2 instance in your AWS Region is $0.01 per hour. In this case, you might be charged for 30 days x 24 hours x $0.01 per hour = $7.20 for your AWS services.
 
-#### Cross-account access to the account you’re closing
+#### Cross-account access to the account youâ€™re closing
 
 After you close your AWS account, any access requests to your closed account's AWS services from other AWS accounts fail. This occurs even if you have granted the other accounts permission to access your account's AWS services. If you reopen your AWS account, other AWS accounts can again access your account's AWS services and resources if you granted the necessary permissions to the other AWS accounts.
 
@@ -170,3 +170,4 @@ To reopen your AWS account, contact AWS Support. If you choose to reopen your ac
 Once the Post-Closure Period ends, AWS permanently closes your AWS account. Any undeleted content will be permanently deleted, and any active AWS services will be stopped. Service attributes necessary for billing and administration purposes may be retained.
 
 Please note that you cannot create a new AWS account using the same alias or email address that was registered to your closed AWS account.
+

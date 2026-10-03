@@ -1,6 +1,6 @@
----
+﻿---
 title : "Create Admin Group and Admin User"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 3
 chapter : false
 pre : " <b> 3. </b> "
@@ -166,3 +166,4 @@ To perform the following steps, you must have at least the following IAM (Identi
 > Alternatively, you can choose to **Deactivate** an access key instead of permanently deleting it. This allows you to continue using it in the future without changing both the key ID and secret key. While the key is deactivated, any requests using it in AWS API requests will fail with an "access denied" error.
 >
 > In the **Delete <access key ID>** dialog, select **Deactivate**, enter the access key ID to confirm your intention to delete it, then choose **Delete**.
+

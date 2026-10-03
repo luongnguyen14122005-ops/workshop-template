@@ -1,42 +1,43 @@
----
-title : "MFA cho Tài khoản AWS"
-date :  "`r Sys.Date()`" 
+﻿---
+title : "MFA cho TÃ i khoáº£n AWS"
+date :  "2026-10-03" 
 weight : 2
 chapter : false
 pre : " <b> 2. </b> "
 ---
 
-#### Hướng dẫn Thiết lập Multi-Factor Authentication (MFA)
+#### HÆ°á»›ng dáº«n Thiáº¿t láº­p Multi-Factor Authentication (MFA)
 
-Trong quy trình bảo mật, việc sử dụng Multi-Factor Authentication (MFA) rất quan trọng. Trong bước này, bạn sẽ sử dụng ba loại thiết bị MFA khác nhau để tăng cường tính bảo mật.
+Trong quy trÃ¬nh báº£o máº­t, viá»‡c sá»­ dá»¥ng Multi-Factor Authentication (MFA) ráº¥t quan trá»ng. Trong bÆ°á»›c nÃ y, báº¡n sáº½ sá»­ dá»¥ng ba loáº¡i thiáº¿t bá»‹ MFA khÃ¡c nhau Ä‘á»ƒ tÄƒng cÆ°á»ng tÃ­nh báº£o máº­t.
 
-#### Thiết bị MFA ảo trên smartphone
+#### Thiáº¿t bá»‹ MFA áº£o trÃªn smartphone
 
-Một cách phổ biến để thực hiện MFA là sử dụng các ứng dụng MFA trên điện thoại thông minh. Có ba ứng dụng phổ biến mà bạn có thể sử dụng:
+Má»™t cÃ¡ch phá»• biáº¿n Ä‘á»ƒ thá»±c hiá»‡n MFA lÃ  sá»­ dá»¥ng cÃ¡c á»©ng dá»¥ng MFA trÃªn Ä‘iá»‡n thoáº¡i thÃ´ng minh. CÃ³ ba á»©ng dá»¥ng phá»• biáº¿n mÃ  báº¡n cÃ³ thá»ƒ sá»­ dá»¥ng:
 
 1. Microsoft Authenticator
 2. Google Authenticator
 3. Okta Verify
 
-Để cài đặt MFA với các ứng dụng này, bạn cần thực hiện các bước sau:
+Äá»ƒ cÃ i Ä‘áº·t MFA vá»›i cÃ¡c á»©ng dá»¥ng nÃ y, báº¡n cáº§n thá»±c hiá»‡n cÃ¡c bÆ°á»›c sau:
 
-1. Tải và cài đặt ứng dụng từ cửa hàng ứng dụng chính thức của hãng phát triển.
-2. Theo hướng dẫn trong ứng dụng, thêm tài khoản bảo mật bằng cách quét mã QR hoặc nhập mã cung cấp.
+1. Táº£i vÃ  cÃ i Ä‘áº·t á»©ng dá»¥ng tá»« cá»­a hÃ ng á»©ng dá»¥ng chÃ­nh thá»©c cá»§a hÃ£ng phÃ¡t triá»ƒn.
+2. Theo hÆ°á»›ng dáº«n trong á»©ng dá»¥ng, thÃªm tÃ i khoáº£n báº£o máº­t báº±ng cÃ¡ch quÃ©t mÃ£ QR hoáº·c nháº­p mÃ£ cung cáº¥p.
 
-#### Khóa bảo mật U2F cứng
+#### KhÃ³a báº£o máº­t U2F cá»©ng
 
-Khóa bảo mật U2F (Universal 2nd Factor) cung cấp một lớp bảo mật bổ sung thông qua cổng USB. Để cài đặt khóa bảo mật U2F, bạn cần thực hiện các bước sau:
+KhÃ³a báº£o máº­t U2F (Universal 2nd Factor) cung cáº¥p má»™t lá»›p báº£o máº­t bá»• sung thÃ´ng qua cá»•ng USB. Äá»ƒ cÃ i Ä‘áº·t khÃ³a báº£o máº­t U2F, báº¡n cáº§n thá»±c hiá»‡n cÃ¡c bÆ°á»›c sau:
 
-1. Mua khóa bảo mật U2F tương thích với hệ thống của bạn.
-2. Kết nối khóa vào cổng USB của máy tính.
-3. Theo hướng dẫn của hãng sản xuất, thực hiện quá trình đăng ký và cài đặt.
+1. Mua khÃ³a báº£o máº­t U2F tÆ°Æ¡ng thÃ­ch vá»›i há»‡ thá»‘ng cá»§a báº¡n.
+2. Káº¿t ná»‘i khÃ³a vÃ o cá»•ng USB cá»§a mÃ¡y tÃ­nh.
+3. Theo hÆ°á»›ng dáº«n cá»§a hÃ£ng sáº£n xuáº¥t, thá»±c hiá»‡n quÃ¡ trÃ¬nh Ä‘Äƒng kÃ½ vÃ  cÃ i Ä‘áº·t.
 
-#### Thiết bị MFA phần cứng khác
+#### Thiáº¿t bá»‹ MFA pháº§n cá»©ng khÃ¡c
 
-Ngoài các tùy chọn trên, còn có các thiết bị MFA phần cứng khác như khóa bảo mật Gemalto. Để sử dụng các thiết bị này, bạn cần tuân thủ hướng dẫn cụ thể từ nhà sản xuất.
+NgoÃ i cÃ¡c tÃ¹y chá»n trÃªn, cÃ²n cÃ³ cÃ¡c thiáº¿t bá»‹ MFA pháº§n cá»©ng khÃ¡c nhÆ° khÃ³a báº£o máº­t Gemalto. Äá»ƒ sá»­ dá»¥ng cÃ¡c thiáº¿t bá»‹ nÃ y, báº¡n cáº§n tuÃ¢n thá»§ hÆ°á»›ng dáº«n cá»¥ thá»ƒ tá»« nhÃ  sáº£n xuáº¥t.
 
-#### Liên kết nhanh đến các phần hướng dẫn chi tiết
+#### LiÃªn káº¿t nhanh Ä‘áº¿n cÃ¡c pháº§n hÆ°á»›ng dáº«n chi tiáº¿t
 
-1. [Thiết lập với thiết bị MFA ảo](#1-virtual-mfa-device)
-2. [Thiết lập với Khóa Bảo mật U2F](#2-u2f-security-key)
-3. [Thiết lập với thiết bị MFA phần cứng khác](#3-other-hardware-mfa-device)
+1. [Thiáº¿t láº­p vá»›i thiáº¿t bá»‹ MFA áº£o](#1-virtual-mfa-device)
+2. [Thiáº¿t láº­p vá»›i KhÃ³a Báº£o máº­t U2F](#2-u2f-security-key)
+3. [Thiáº¿t láº­p vá»›i thiáº¿t bá»‹ MFA pháº§n cá»©ng khÃ¡c](#3-other-hardware-mfa-device)
+

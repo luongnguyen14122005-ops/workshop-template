@@ -1,6 +1,6 @@
----
+﻿---
 title : "Create or update your AWS account alias"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 3
 chapter : false
 pre : " <b> 1.3 </b> "
@@ -74,3 +74,4 @@ To perform the following steps, you must have at least the following IAM permiss
 3. In the navigation pane, choose **Dashboard**.
 
 4. In the right-hand pane under AWS account, next to **Account Alias**, choose **Delete**.
+

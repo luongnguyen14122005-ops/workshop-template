@@ -1,6 +1,6 @@
----
+﻿---
 title : "View AWS account identifiers"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 1
 chapter : false
 pre : " <b> 1.1 </b> "
@@ -72,3 +72,4 @@ You must have permission to list and view an Amazon S3 bucket.
 2. In the Amazon S3 console, choose a bucket name to view details about a bucket.
 3. Choose the Permissions tab.
 4. In the Access control list section, under Bucket owner, the canonical ID for your AWS account appears.
+

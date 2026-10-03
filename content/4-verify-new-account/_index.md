@@ -1,6 +1,6 @@
----
+﻿---
 title : "Account Authentication Support"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 4
 chapter : false
 pre : " <b> 4. </b> "

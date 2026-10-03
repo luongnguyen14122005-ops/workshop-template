@@ -1,6 +1,6 @@
----
+﻿---
 title : "MFA for AWS Accounts"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 2
 chapter : false
 pre : " <b> 2. </b> "
@@ -59,3 +59,4 @@ Consider using hardware MFA devices like Gemalto security keys for an extra laye
 ---
 
 Remember to keep your MFA devices secure and follow best practices to ensure the safety of your account.
+

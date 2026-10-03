@@ -1,23 +1,23 @@
----
-title : "Thiết bị MFA cứng"
-date :  "`r Sys.Date()`" 
+﻿---
+title : "Thiáº¿t bá»‹ MFA cá»©ng"
+date :  "2026-10-03" 
 weight : 3
 chapter : false
 pre : " <b> 2.3 </b> "
 ---
 
-**Nội dung**
+**Ná»™i dung**
 
-- [Kích hoạt thiết bị MFA phần cứng khác thông qua Console](#kích-hoạt-thiết-bị-mfa-phần-cứng-khác-thông-qua-console)
+- [KÃ­ch hoáº¡t thiáº¿t bá»‹ MFA pháº§n cá»©ng khÃ¡c thÃ´ng qua Console](#kÃ­ch-hoáº¡t-thiáº¿t-bá»‹-mfa-pháº§n-cá»©ng-khÃ¡c-thÃ´ng-qua-console)
 
-#### Kích hoạt thiết bị MFA phần cứng khác thông qua Console
+#### KÃ­ch hoáº¡t thiáº¿t bá»‹ MFA pháº§n cá»©ng khÃ¡c thÃ´ng qua Console
 
-1. Đăng nhập vào AWS Console.
-2. Góc trên bên phải, bạn sẽ thấy tên account của bạn, chọn vào và chọn **My Security Credentials** sau đó mở rộng Multi-factor authentication (MFA).
+1. ÄÄƒng nháº­p vÃ o AWS Console.
+2. GÃ³c trÃªn bÃªn pháº£i, báº¡n sáº½ tháº¥y tÃªn account cá»§a báº¡n, chá»n vÃ o vÃ  chá»n **My Security Credentials** sau Ä‘Ã³ má»Ÿ rá»™ng Multi-factor authentication (MFA).
 
 ![Image](/images/1-account-setup/MySecurity_v1.png?width=15pc)
 
-3. Để quản lí khóa bảo mật U2F, bạn phải có quyền từ bộ quyền sau. ở thanh bên trái, chọn **Policies** sau đó chọn **Create policy**, chọn **JSON** tab và dán phần bên dưới vào:
+3. Äá»ƒ quáº£n lÃ­ khÃ³a báº£o máº­t U2F, báº¡n pháº£i cÃ³ quyá»n tá»« bá»™ quyá»n sau. á»Ÿ thanh bÃªn trÃ¡i, chá»n **Policies** sau Ä‘Ã³ chá»n **Create policy**, chá»n **JSON** tab vÃ  dÃ¡n pháº§n bÃªn dÆ°á»›i vÃ o:
 
 ```js
 {
@@ -56,24 +56,25 @@ pre : " <b> 2.3 </b> "
 ```
 ![MFA](/images/3/0001.png?featherlight=false&width=90pc)
 
-4. Chọn **Next: Tags**. Đây là màn hình về **Tags** một công cụ dùng để phân biệt các tài nguyên của AWS.
-5. Chọn  **Next: Review**. Đây là màn hình cho phép bạn review về bộ quyền mà bạn đang tạo ra. 
-6. Nhập tên bộ quyền (ví dụ: MFAHardDevice) và chọn **Create policy**.
+4. Chá»n **Next: Tags**. ÄÃ¢y lÃ  mÃ n hÃ¬nh vá» **Tags** má»™t cÃ´ng cá»¥ dÃ¹ng Ä‘á»ƒ phÃ¢n biá»‡t cÃ¡c tÃ i nguyÃªn cá»§a AWS.
+5. Chá»n  **Next: Review**. ÄÃ¢y lÃ  mÃ n hÃ¬nh cho phÃ©p báº¡n review vá» bá»™ quyá»n mÃ  báº¡n Ä‘ang táº¡o ra. 
+6. Nháº­p tÃªn bá»™ quyá»n (vÃ­ dá»¥: MFAHardDevice) vÃ  chá»n **Create policy**.
 
 ![MFA](/images/3/0002.png?featherlight=false&width=90pc)
 
 ![MFA](/images/3/0003.png?featherlight=false&width=90pc)
 
-7. Ở thanh bên trái , chọn **Dashboard** và sau đó chọn **Enable MFA**.
+7. á»ž thanh bÃªn trÃ¡i , chá»n **Dashboard** vÃ  sau Ä‘Ã³ chá»n **Enable MFA**.
 
 ![MFA](/images/3/0004.png?featherlight=false&width=90pc)
 
-8. Mở rộng Multi-factor authentication (MFA) sau đó chọn **Active MFA**.
+8. Má»Ÿ rá»™ng Multi-factor authentication (MFA) sau Ä‘Ã³ chá»n **Active MFA**.
 
-9. Trong **Manage MFA Device**, chọn **Other Hardware MFA Device** sau đó nhấn **Continue**.
-10. Nhập **Serial Number** ở đằng sau thiết bị.
+9. Trong **Manage MFA Device**, chá»n **Other Hardware MFA Device** sau Ä‘Ã³ nháº¥n **Continue**.
+10. Nháº­p **Serial Number** á»Ÿ Ä‘áº±ng sau thiáº¿t bá»‹.
 
 ![Image](/images/1-account-setup/HardwareMFA.png?featherlight=false&width=90pc)
 
-11. Nhập MFA code 1 sau đó đợi 30 giây và nhập MFA code 2.
-12. Chọn **Assign MFA**.
+11. Nháº­p MFA code 1 sau Ä‘Ã³ Ä‘á»£i 30 giÃ¢y vÃ  nháº­p MFA code 2.
+12. Chá»n **Assign MFA**.
+

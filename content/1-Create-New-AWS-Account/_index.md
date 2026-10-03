@@ -1,6 +1,6 @@
----
+﻿---
 title : "Create new AWS account"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 1
 chapter : false
 pre : " <b> 1. </b> "
@@ -73,7 +73,7 @@ pre : " <b> 1. </b> "
 
 #### Wait for your account to be activated
 
-- After selecting **Support plan**, the account is usually activated after a few minutes, but the process can take up to 24 hours. You will still be able to log in to your AWS account at this time, the AWS Home page may show a “Complete Sign Up” button during this time, even if you have completed all the steps in the registration section.
+- After selecting **Support plan**, the account is usually activated after a few minutes, but the process can take up to 24 hours. You will still be able to log in to your AWS account at this time, the AWS Home page may show a â€œComplete Sign Upâ€ button during this time, even if you have completed all the steps in the registration section.
 - After receiving an email confirming your account has been activated, you can access all AWS services.       
   
 #### Important
@@ -95,3 +95,4 @@ You must be authenticated with AWS to view these identifiers.
 #### Warning
 
 **Do not provide your AWS credentials** (including passwords and access keys) to a third party that needs your AWS account identifiers to share AWS resources with you. Doing so would give them the same access to the AWS account that you have.
+

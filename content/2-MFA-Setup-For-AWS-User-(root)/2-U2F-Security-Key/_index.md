@@ -1,6 +1,6 @@
----
+﻿---
 title : "U2F Security Key"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 2
 chapter : false
 pre : " <b> 2.2 </b> "

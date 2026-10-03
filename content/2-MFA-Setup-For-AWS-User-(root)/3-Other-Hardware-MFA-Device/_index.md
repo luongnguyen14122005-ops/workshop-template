@@ -1,6 +1,6 @@
----
+﻿---
 title : "Hard MFA Device"
-date : "`r Sys.Date()`"
+date : "2026-10-03"
 weight : 3
 chapter : false
 pre : " <b> 2.3 </b> "
