@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/vi/5-workshop/5.1-introduction/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/5-workshop/5.1-introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/5-workshop/5.1-introduction/"
+                />
+  </url><url>
     <loc>http://localhost:1313/vi/1-create-new-aws-account/</loc>
     <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -41,6 +54,19 @@
                 href="http://localhost:1313/vi/"
                 />
   </url><url>
+    <loc>http://localhost:1313/vi/5-workshop/5.2-prerequisite/</loc>
+    <lastmod>2026-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/5-workshop/5.2-prerequisite/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/5-workshop/5.2-prerequisite/"
+                />
+  </url><url>
     <loc>http://localhost:1313/vi/2-mfa-setup-for-aws-user-root/2-u2f-security-key/</loc>
     <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -65,6 +91,19 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/vi/2-mfa-setup-for-aws-user-root/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/5-workshop/5.3-sqs-dlq/</loc>
+    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/5-workshop/5.3-sqs-dlq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/5-workshop/5.3-sqs-dlq/"
                 />
   </url><url>
     <loc>http://localhost:1313/vi/3-create-admin-user-and-group/</loc>
@@ -93,6 +132,19 @@
                 href="http://localhost:1313/vi/2-mfa-setup-for-aws-user-root/3-other-hardware-mfa-device/"
                 />
   </url><url>
+    <loc>http://localhost:1313/vi/5-workshop/5.4-idempotency/</loc>
+    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/5-workshop/5.4-idempotency/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/5-workshop/5.4-idempotency/"
+                />
+  </url><url>
     <loc>http://localhost:1313/vi/4-verify-new-account/</loc>
     <lastmod>2026-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -104,6 +156,71 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/vi/4-verify-new-account/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/5-workshop/5.5-step-functions-notification/</loc>
+    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/5-workshop/5.5-step-functions-notification/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/5-workshop/5.5-step-functions-notification/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/5-workshop/</loc>
+    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/5-workshop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/5-workshop/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/5-workshop/5.6-monitoring/</loc>
+    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/5-workshop/5.6-monitoring/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/5-workshop/5.6-monitoring/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/5-workshop/5.7-experiment/</loc>
+    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/5-workshop/5.7-experiment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/5-workshop/5.7-experiment/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/5-workshop/5.8-clean-up/</loc>
+    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/5-workshop/5.8-clean-up/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/5-workshop/5.8-clean-up/"
                 />
   </url><url>
     <loc>http://localhost:1313/vi/categories/</loc>
